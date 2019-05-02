@@ -3,9 +3,9 @@ import React from 'react';
 
 
 const TodoForm = props => {
-    return (
-        <form>
-          <input
+  return (
+    <form>
+      <input
         onChange={props.handleTodoChange}
         type="text"
         name="todo"
@@ -13,8 +13,8 @@ const TodoForm = props => {
         placeholder="...todo"
       />
       <button onClick={props.handleAddTodo}>Add Todo</button>
-      <button onClick={props.handleClearTodos}>Clear Completed</button>
-        </form>
-    );
+
+    </form>
+  );
 };
 export default TodoForm;
